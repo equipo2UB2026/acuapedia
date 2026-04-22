@@ -1,101 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AquaPedia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nami – Restaurante Japonés</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <h1>AquaPedia</h1>
-    <p>Sumergite en la enciclopedia digital más completa del mundo sobre la vida acuática.</p>
-    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoZsv2iyvouMS_YmQ6hJ_Gpn7xJ80USMq6w&s" alt="Imagen principal de vida acuática">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="logo">波 Nami</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reserva" class="btn-reserva">Reservar</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Explorá la vida acuática</h2>
-      <p>Navegá por seis grandes categorías de animales acuáticos.</p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="hero-tag">Cocina japonesa contemporánea</span>
+        <h1 class="hero-title">Nami</h1>
+        <p class="hero-sub">Donde cada plato es una ola de sabor</p>
+        <a href="#menu" class="btn-primary">Ver el menú</a>
+      </div>
     </section>
 
-    <section>
-      <article>
-        <a href="mamiferos.html">Mamíferos marinos</a>
-        <p>Los gobernantes de sangre caliente de las profundidades.</p>
-      </article>
-
-      <article>
-        <h3>Peces</h3>
-        <p>Los vertebrados más diversos del océano.</p>
-      </article>
-
-      <article>
-        <h3>Moluscos</h3>
-        <p>Maestros del camuflaje y la adaptación.</p>
-      </article>
-
-      <article>
-        <h3>Crustáceos</h3>
-        <p>Arquitectos acorazados del fondo marino.</p>
-      </article>
-
-      <article>
-        <h3>Cnidarios</h3>
-        <p>Etéreos viajeros y constructores de arrecifes.</p>
-      </article>
-
-      <article>
-        <h3>Equinodermos</h3>
-        <p>Maravillas espinosas del fondo oceánico.</p>
-      </article>
+    <!-- NOSOTROS -->
+    <section class="nosotros-section" id="nosotros">
+      <div class="container nosotros-inner">
+        <div class="nosotros-texto">
+          <span class="label">Nuestra historia</span>
+          <h2>Una experiencia de autor</h2>
+          <p>Nami nació de la pasión por la cocina japonesa tradicional y su encuentro con ingredientes locales de temporada. Cada plato respeta el silencio y la precisión del método japonés.</p>
+          <p>Nuestro chef Kenji Mori trae más de 15 años de experiencia en Tokio y Barcelona, fusionando técnicas ancestrales con una mirada contemporánea y minimalista.</p>
+        </div>
+        <div class="nosotros-imagen">
+          <div class="imagen-placeholder"></div>
+          <div class="nosotros-dato">
+            <strong>15+</strong>
+            <span>años de experiencia</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Protejamos nuestros océanos</h2>
-      <p>Cada especie cumple un rol vital en el equilibrio de los ecosistemas marinos.</p>
-      <a href="#">Descubrí todas las especies</a>
+    <!-- MENÚ DESTACADO -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <span class="label center">Lo que ofrecemos</span>
+        <h2 class="section-title">Menú destacado</h2>
+        <p class="section-sub">Ingredientes frescos, técnica japonesa, alma propia</p>
+
+        <div class="menu-grid">
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-1"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Entradas</span>
+              <h3>Tataki de atún</h3>
+              <p>Atún sellado con sésamo negro, jengibre encurtido y salsa ponzu cítrica</p>
+              <span class="precio">$3.200</span>
+            </div>
+          </article>
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-2"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Principales</span>
+              <h3>Ramen Nami</h3>
+              <p>Caldo tonkotsu 12 horas, chashu de cerdo, huevo marinado y bambú</p>
+              <span class="precio">$4.800</span>
+            </div>
+          </article>
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-3"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Rolls</span>
+              <h3>Dragon Roll</h3>
+              <p>Langostinos tempura, palta, pepino y mayonesa de wasabi</p>
+              <span class="precio">$3.900</span>
+            </div>
+          </article>
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-4"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Postres</span>
+              <h3>Mochi helado</h3>
+              <p>Trío de mochi: matcha, sésamo negro y yuzu con crema de coco</p>
+              <span class="precio">$1.800</span>
+            </div>
+          </article>
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-5"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Principales</span>
+              <h3>Salmón teriyaki</h3>
+              <p>Salmón fresco glaseado con teriyaki casero, arroz integral y edamame</p>
+              <span class="precio">$5.100</span>
+            </div>
+          </article>
+
+          <article class="plato-card">
+            <div class="plato-img plato-img-6"></div>
+            <div class="plato-info">
+              <span class="categoria-tag">Bebidas</span>
+              <h3>Sake selección</h3>
+              <p>Cuatro variedades de sake premium servidas en cerámica artesanal</p>
+              <span class="precio">$2.600</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="experiencia-section">
+      <div class="container">
+        <div class="exp-grid">
+          <div class="exp-card">
+            <span class="exp-icon">🌿</span>
+            <h3>Ingredientes frescos</h3>
+            <p>Trabajamos con productores locales y proveedores de importación selecta para garantizar la máxima calidad.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-icon">🍶</span>
+            <h3>Técnica tradicional</h3>
+            <p>Métodos ancestrales japoneses adaptados con precisión y respeto a cada preparación.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-icon">🎋</span>
+            <h3>Ambiente zen</h3>
+            <p>Un espacio diseñado para que cada visita sea una pausa de calma y disfrute genuino.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVA -->
+    <section class="reserva-section" id="reserva">
+      <div class="container reserva-inner">
+        <span class="label center light">Reservas</span>
+        <h2>Reservá tu mesa</h2>
+        <p>Completá el formulario y confirmamos en menos de 24 horas</p>
+
+        <form class="reserva-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="tu@email.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" />
+            </div>
+            <div class="form-group">
+              <label for="personas">Personas</label>
+              <select id="personas">
+                <option value="">Seleccioná</option>
+                <option>1 persona</option>
+                <option>2 personas</option>
+                <option>3-4 personas</option>
+                <option>5 o más</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="comentarios">Comentarios o pedidos especiales</label>
+            <textarea id="comentarios" rows="3" placeholder="Alergias, ocasiones especiales..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn-primary">Confirmar reserva ›</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </main>
 
- <footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">波 Nami</p>
+        <p>Cocina japonesa contemporánea en el corazón de Buenos Aires.</p>
+      </div>
+      <div class="footer-info">
+        <h4>Horarios</h4>
+        <p>Mar a Dom: 12:00 – 15:30 | 20:00 – 23:30</p>
+        <p>Lunes cerrado</p>
+      </div>
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Av. Santa Fe 1842, CABA</p>
+        <p>+54 11 4832-0091</p>
+        <p>hola@nami.com.ar</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Nami Restaurante. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-  <h2>AquaPedia</h2>
-
-  <p>
-    Una enciclopedia digital dedicada a explorar y preservar la magnífica
-    biodiversidad de nuestros océanos y cursos de agua.
-  </p>
-
-  <section>
-    <h3>Explorar</h3>
-
-    <p>
-      <a href="mamiferos.html">Mamíferos marinos</a><br>
-      <a href="peces.html">Peces</a><br>
-      <a href="moluscos.html">Moluscos</a><br>
-      <a href="crustaceos.html">Crustáceos</a><br>
-      <a href="cnidarios.html">Cnidarios</a><br>
-      <a href="equinodermos.html">Equinodermos</a>
-    </p>
-  </section>
-
-  <section>
-    <h3>Acerca de</h3>
-
-    <p>
-      AquaPedia es un proyecto educativo diseñado para inspirar curiosidad
-      y conciencia sobre la vida acuática y la importancia de la conservación
-      de los océanos.
-    </p>
-  </section>
-
-  <p>
-    © 2026 AquaPedia. Todos los derechos reservados.
-  </p>
-
-  <p>
-    Protegiendo nuestros océanos, una especie a la vez.
-  </p>
-
-</footer>
+  <script src="main.js"></script>
+</body>
+</html>
